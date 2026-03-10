@@ -10,7 +10,7 @@ spring:
           model: "llama3.2:1b"
     chat:
       client:
-        enabled: false #Disabilita la configurazione automatica del bean ChatClient perché vogliamo crearne più di uno in base ai model LLM(openai, ollama).
+        enabled: false #Disabilita la configurazione automatica del bean ChatClient perché vogliamo configurare più di un bean ChatClient specifici per diversi LLM model.
 
 logging:
   pattern:
